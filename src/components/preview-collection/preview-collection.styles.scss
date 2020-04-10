@@ -1,0 +1,14 @@
+.preview {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 55px 0;
+    padding: 0 48px;
+    &__header {
+        width: 100%;
+        margin: 0 0 15px 0;
+    }    
+}

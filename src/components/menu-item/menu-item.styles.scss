@@ -1,0 +1,49 @@
+.menuItem {
+  width: 35%;
+  height: 350px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 15px 0 0 0;
+  background-color: rgba($color: #000000, $alpha: 0.6);
+  background-blend-mode: darken;
+  transition: all 0.5s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 25px 25px;
+  &:hover {
+    background-color: transparent;
+    background-blend-mode: screen;
+  }
+  &--small {
+    width: 23.5%;
+  }
+  &--large {
+    width: 48.5%;
+  }
+  &__infoWrapper {
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__title {
+    font-size: 39px;
+    color: #ffffff;
+  }
+  &__shopNow {
+    background: #000000;
+    cursor: pointer;
+    color: #ffffff;
+    width: 150px;
+    height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+      background: rgba(93, 93, 93, 0.7);
+    }
+  }
+}
