@@ -1,5 +1,6 @@
 import React from "react";
 import "./menu-item.styles.scss";
+import CustomButon from "../custom-button/custom-button.component";
 
 const MenuItem = ({ imageUrl, title, size }) => {
   return (
@@ -9,7 +10,7 @@ const MenuItem = ({ imageUrl, title, size }) => {
     >
       <div className="menuItem__infoWrapper">
         <div className="menuItem__title">{title.toUpperCase()}</div>
-        <div className="menuItem__shopNow">SHOP NOW</div>
+        <CustomButon>SHOP NOW</CustomButon>
       </div>
     </div>
   );

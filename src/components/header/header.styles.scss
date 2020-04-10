@@ -17,10 +17,18 @@
     text-decoration: none;
     padding: 15px 20px;
     margin: 0 10px;
+    cursor: pointer;
   }
   &__basket {
     fill: #ffffff;
     width: 20px;
     margin-left: 20px;
+  }
+  &__linkWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
   }
 }

@@ -1,0 +1,16 @@
+.custom-button {
+  background: #000000;
+  cursor: pointer;
+  color: #ffffff;
+  width: 150px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  transition: all 0.15s ease;
+  font-size: 14px;
+  &:hover {
+    background: rgba(60, 60, 60, 0.8);
+  }
+}
