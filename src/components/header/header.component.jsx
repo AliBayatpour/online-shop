@@ -2,6 +2,9 @@ import React from "react";
 import "./header.styles.scss";
 
 import { auth } from "../../firebase/firebase.utils";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
+import { selectCurrentUser } from "../../redux/user/user.selectors";
 
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.webp";
@@ -34,5 +37,8 @@ const Header = ({ currentUser }) => {
     </div>
   );
 };
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+});
 
-export default Header;
+export default connect(mapStateToProps)(Header);

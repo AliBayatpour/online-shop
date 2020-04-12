@@ -6,7 +6,6 @@ import { selectShopCollection } from "../../redux/shop/shop.selectors";
 import PreviewCollection from "../../components/preview-collection/preview-collection.component";
 
 const ShopPage = ({ items }) => {
-  console.log(items);
   return (
     <div className="shop">
       {items.map(({ id, ...otherProps }) => (
