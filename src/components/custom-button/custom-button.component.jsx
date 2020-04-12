@@ -3,7 +3,7 @@ import "./custom-button.styles.scss";
 
 const CustomButon = ({ children, isGoogleSignIn, ...otherProps }) => {
   return (
-    <button className="custom-button" {...otherProps}>
+    <button className="customButton" {...otherProps}>
       {children}
     </button>
   );

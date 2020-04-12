@@ -7,11 +7,11 @@ $main-color: black;
   color: $main-color;
 }
 
-.group {
+.formInputWrap {
   position: relative;
   margin: 45px 0;
-
-  .form-input {
+  z-index: -1;
+  &__input {
     background: none;
     background-color: white;
     color: $sub-color;
@@ -23,7 +23,6 @@ $main-color: black;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
-
     &:focus {
       outline: none;
     }

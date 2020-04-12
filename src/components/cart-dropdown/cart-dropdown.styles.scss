@@ -1,0 +1,12 @@
+.cartDropDown {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 450px;
+  background: #ffffff;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 130%;
+  transform: translate(-85%, 0);
+  padding: 20px 5px;
+}

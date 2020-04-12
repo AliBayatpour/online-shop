@@ -8,8 +8,8 @@ const PreviewCollection = ({ title, items }) => {
       <h2 className="preview__header">{title}</h2>
       {items
         .filter((_, idx) => idx < 4)
-        .map(({ id, ...otherProps }) => (
-          <CollectionItem key={id} {...otherProps} />
+        .map((item) => (
+          <CollectionItem key={item.id} item={item} />
         ))}
     </div>
   );

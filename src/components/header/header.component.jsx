@@ -8,7 +8,7 @@ import { selectCurrentUser } from "../../redux/user/user.selectors";
 
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.webp";
-import { ReactComponent as Basket } from "../../assets/bag.svg";
+import CartIcon from "../cart-icon/cart-icon.component";
 
 const Header = ({ currentUser }) => {
   return (
@@ -32,7 +32,7 @@ const Header = ({ currentUser }) => {
             SIGN IN
           </Link>
         )}
-        <Basket className="header__basket" />
+        <CartIcon />
       </div>
     </div>
   );
