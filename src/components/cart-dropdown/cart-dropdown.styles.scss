@@ -1,12 +1,19 @@
 .cartDropDown {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
   width: 300px;
-  height: 450px;
+  min-height: 200px;
+  max-height: 450px;
   background: #ffffff;
   border: 1px solid #000000;
   position: absolute;
   top: 130%;
   transform: translate(-85%, 0);
-  padding: 20px 5px;
+  padding: 20px 20px;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  cursor: default;
 }
