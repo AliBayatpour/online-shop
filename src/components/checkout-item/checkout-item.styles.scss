@@ -1,0 +1,29 @@
+.checkoutItem {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  border-bottom: 1px #989898 solid;
+  &__block {
+    width: 23%;
+    margin: 20px 0;
+    text-align: center;
+    &--image {
+      height: 150px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    &--remove {
+      width: 8%;
+      span {
+        padding: 8px;
+        cursor: pointer;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+}

@@ -4,8 +4,9 @@ import CustomButon from "../custom-button/custom-button.component";
 
 import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cart.actions";
+import { cartVisible } from "../../redux/cart/cart.actions";
 
-const CollectionItem = ({ item, addItem }) => {
+const CollectionItem = ({ item, addItem, cartVisible }) => {
   const { name, imageUrl, price } = item;
   return (
     <div className="collectionItem">
@@ -13,7 +14,14 @@ const CollectionItem = ({ item, addItem }) => {
         className="collectionItem__image"
         style={{ backgroundImage: `url(${imageUrl})` }}
       >
-        <CustomButon onClick={() => addItem(item)}>ADD TO CART</CustomButon>
+        <CustomButon
+          onClick={() => {
+            addItem(item);
+            cartVisible();
+          }}
+        >
+          ADD TO CART
+        </CustomButon>
       </div>
       <div className="collectionItem__info">
         <span className="collectionItem__title">{name}</span>
@@ -25,5 +33,6 @@ const CollectionItem = ({ item, addItem }) => {
 
 const mapDispatchToProps = (dispatch) => ({
   addItem: (item) => dispatch(addItem(item)),
+  cartVisible: () => dispatch(cartVisible()),
 });
 export default connect(null, mapDispatchToProps)(CollectionItem);
