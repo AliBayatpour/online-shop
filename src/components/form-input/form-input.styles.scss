@@ -7,15 +7,15 @@ $main-color: black;
   color: $main-color;
 }
 
-.formInputWrap {
+.group {
   position: relative;
   margin: 45px 0;
-  z-index: -1;
-  &__input {
+
+  .form-input {
     background: none;
     background-color: white;
     color: $sub-color;
-    font-size: 17px;
+    font-size: 18px;
     padding: 10px 10px 10px 5px;
     display: block;
     width: 100%;
@@ -23,6 +23,7 @@ $main-color: black;
     border-radius: 0;
     border-bottom: 1px solid $sub-color;
     margin: 25px 0;
+
     &:focus {
       outline: none;
     }
@@ -45,7 +46,7 @@ $main-color: black;
     left: 5px;
     top: 10px;
     transition: 300ms ease all;
-    width: 100%;
+
     &.shrink {
       @include shrinkLabel();
     }
