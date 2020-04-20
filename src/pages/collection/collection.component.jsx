@@ -5,7 +5,7 @@ import { connect } from "react-redux";
 import { selectCollection } from "../../redux/shop/shop.selectors";
 import CollectionItem from "../../components/collection-item/collectionItem.component";
 
-const CollectionPage = ({ match, collection }) => {
+const CollectionPage = ({ collection }) => {
   const { items, title } = collection;
 
   return (

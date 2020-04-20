@@ -6,7 +6,7 @@ import CollectionsOverview from "../../components/collections-overview/collectio
 import { selectIsFetching } from "../../redux/shop/shop.selectors";
 
 const mapStateToProps = createStructuredSelector({
-  isFetching: selectIsFetching,
+  isLoading: selectIsFetching,
 });
 
 const CollectionsOverviewContainer = compose(

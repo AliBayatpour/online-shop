@@ -1,7 +1,6 @@
 import React from "react";
 import "./header.styles.scss";
 
-import { auth } from "../../firebase/firebase.utils";
 import { connect } from "react-redux";
 import { createStructuredSelector } from "reselect";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
@@ -9,8 +8,9 @@ import { selectCurrentUser } from "../../redux/user/user.selectors";
 import { Link } from "react-router-dom";
 import logo from "../../assets/logo.webp";
 import CartIcon from "../cart-icon/cart-icon.component";
+import { signOutStart } from "../../redux/user/user.actions";
 
-const Header = ({ currentUser }) => {
+const Header = ({ currentUser, signOutStart }) => {
   return (
     <div className="header">
       <div className="header__linkWrapper">
@@ -24,7 +24,7 @@ const Header = ({ currentUser }) => {
       <img className="header__logo" src={logo} alt="LOGO" />
       <div className="header__linkWrapper">
         {currentUser ? (
-          <div className="header__link" onClick={() => auth.signOut()}>
+          <div className="header__link" onClick={signOutStart}>
             SIGN OUT
           </div>
         ) : (
@@ -37,8 +37,13 @@ const Header = ({ currentUser }) => {
     </div>
   );
 };
+
 const mapStateToProps = createStructuredSelector({
   currentUser: selectCurrentUser,
 });
 
-export default connect(mapStateToProps)(Header);
+const mapDispatchToProps = (dispatch) => ({
+  signOutStart: () => dispatch(signOutStart()),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(Header);
