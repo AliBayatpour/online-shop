@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/online-shop/static/css/main.c38a1c94.chunk.css",
+    "main.js": "/online-shop/static/js/main.4e92ae2f.chunk.js",
+    "main.js.map": "/online-shop/static/js/main.4e92ae2f.chunk.js.map",
+    "runtime-main.js": "/online-shop/static/js/runtime-main.f91e04bd.js",
+    "runtime-main.js.map": "/online-shop/static/js/runtime-main.f91e04bd.js.map",
+    "static/js/2.9f7546a8.chunk.js": "/online-shop/static/js/2.9f7546a8.chunk.js",
+    "static/js/2.9f7546a8.chunk.js.map": "/online-shop/static/js/2.9f7546a8.chunk.js.map",
+    "index.html": "/online-shop/index.html",
+    "precache-manifest.cc657ea7245c29ecc409fa7d5be4c6e5.js": "/online-shop/precache-manifest.cc657ea7245c29ecc409fa7d5be4c6e5.js",
+    "service-worker.js": "/online-shop/service-worker.js",
+    "static/css/main.c38a1c94.chunk.css.map": "/online-shop/static/css/main.c38a1c94.chunk.css.map",
+    "static/js/2.9f7546a8.chunk.js.LICENSE.txt": "/online-shop/static/js/2.9f7546a8.chunk.js.LICENSE.txt",
+    "static/media/bag.ec65ffb8.svg": "/online-shop/static/media/bag.ec65ffb8.svg",
+    "static/media/benner.styles.scss": "/online-shop/static/media/banner.75bab4fd.jpg",
+    "static/media/logo.webp": "/online-shop/static/media/logo.2793518b.webp"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f91e04bd.js",
+    "static/js/2.9f7546a8.chunk.js",
+    "static/css/main.c38a1c94.chunk.css",
+    "static/js/main.4e92ae2f.chunk.js"
+  ]
+}
