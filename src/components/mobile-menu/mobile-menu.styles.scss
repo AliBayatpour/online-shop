@@ -1,0 +1,31 @@
+.mobileMenu {
+  width: 100vw;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  background: #000000;
+  z-index: 6;
+  display: none;
+  flex-wrap: wrap;
+  @media (max-width: 800px) {
+      display: flex;
+      // justify-content: center;
+      align-items: center;
+  }
+  &__icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: absolute;
+    right: 20px;
+    padding: 5px;
+  }
+  &__iconLine {
+    transition: all 150ms ease;
+    width: 35px;
+    height: 2px;
+    background: #ffffff;
+  }
+}

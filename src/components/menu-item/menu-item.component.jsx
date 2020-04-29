@@ -8,13 +8,13 @@ const MenuItem = ({ imageUrl, title, size, linkUrl, history }) => {
   return (
     <div
       className={`menuItem menuItem--${size}`}
-      style={{ backgroundImage: `url(${imageUrl})` }}
       onClick={() => history.push(`${linkUrl}`)}
     >
-      <div className="menuItem__infoWrapper">
-        <div className="menuItem__title">{title.toUpperCase()}</div>
-        <CustomButon>SHOP NOW</CustomButon>
-      </div>
+      <div className="menuItem__imgContaier" style={{ backgroundImage: `url(${imageUrl})` }}></div>
+        <div className="menuItem__infoWrapper">
+          <div className="menuItem__title">{title.toUpperCase()}</div>
+          <CustomButon>SHOP NOW</CustomButon>
+        </div>
     </div>
   );
 };

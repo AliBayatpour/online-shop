@@ -12,7 +12,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, reduceItem }) => {
         className="checkoutItem__block checkoutItem__block--image"
         style={{ backgroundImage: `url(${imageUrl})` }}
       ></div>
-      <div className="checkoutItem__block">{name}</div>
+      <div className="checkoutItem__block checkoutItem__block--name">{name}</div>
       <div className="checkoutItem__block checkoutItem__block--quantity">
         <span
           className="checkoutItem__arrow"
@@ -25,7 +25,7 @@ const CheckoutItem = ({ cartItem, clearItem, addItem, reduceItem }) => {
           &#10095;
         </span>
       </div>
-      <div className="checkoutItem__block">{price}</div>
+      <div className="checkoutItem__block">${price}</div>
       <div className="checkoutItem__block checkoutItem__block--remove">
         <span onClick={() => clearItem(cartItem)}>&#10006;</span>
       </div>

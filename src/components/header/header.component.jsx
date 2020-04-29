@@ -14,11 +14,11 @@ const Header = ({ currentUser, signOutStart }) => {
   return (
     <div className="header">
       <div className="header__linkWrapper">
-        <Link className="header__link" to="/shop">
-          SHOP
+        <Link className="header__link" to="/">
+          HOME
         </Link>
         <Link className="header__link" to="/shop">
-          CONTACT
+          SHOP
         </Link>
       </div>
       <img className="header__logo" src={logo} alt="LOGO" />

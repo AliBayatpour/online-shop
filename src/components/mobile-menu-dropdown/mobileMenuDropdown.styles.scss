@@ -1,0 +1,20 @@
+.mobileMenuDropdown {
+  width: 100vw;
+  height: 100vh;
+  background: #000000;
+  position: fixed;
+  z-index: 5;
+  padding-top: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  &__linksContainer {
+    width: 80%;
+  }
+  &__link {
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}

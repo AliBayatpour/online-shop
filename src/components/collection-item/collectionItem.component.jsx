@@ -4,9 +4,8 @@ import CustomButon from "../custom-button/custom-button.component";
 
 import { connect } from "react-redux";
 import { addItem } from "../../redux/cart/cart.actions";
-import { cartVisible } from "../../redux/cart/cart.actions";
 
-const CollectionItem = ({ item, addItem, cartVisible }) => {
+const CollectionItem = ({ item, addItem }) => {
   const { name, imageUrl, price } = item;
   return (
     <div className="collectionItem">
@@ -17,7 +16,6 @@ const CollectionItem = ({ item, addItem, cartVisible }) => {
         <CustomButon
           onClick={() => {
             addItem(item);
-            cartVisible();
           }}
         >
           ADD TO CART
@@ -33,6 +31,5 @@ const CollectionItem = ({ item, addItem, cartVisible }) => {
 
 const mapDispatchToProps = (dispatch) => ({
   addItem: (item) => dispatch(addItem(item)),
-  cartVisible: () => dispatch(cartVisible()),
 });
 export default connect(null, mapDispatchToProps)(CollectionItem);
